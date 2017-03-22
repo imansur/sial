@@ -43,7 +43,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(590, 107);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 0;
+            this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -53,7 +53,7 @@
             this.BtnSair.Location = new System.Drawing.Point(671, 107);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(75, 23);
-            this.BtnSair.TabIndex = 1;
+            this.BtnSair.TabIndex = 3;
             this.BtnSair.Text = "Sair";
             this.BtnSair.UseVisualStyleBackColor = true;
             this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
@@ -84,14 +84,14 @@
             this.txtFone.Mask = "(99)90000-0000";
             this.txtFone.Name = "txtFone";
             this.txtFone.Size = new System.Drawing.Size(167, 20);
-            this.txtFone.TabIndex = 4;
+            this.txtFone.TabIndex = 1;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(16, 75);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(557, 20);
-            this.txtNome.TabIndex = 5;
+            this.txtNome.TabIndex = 0;
             // 
             // lblNome
             // 

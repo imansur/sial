@@ -1,5 +1,9 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using Repositorio.Entidades.Entidades.Sial;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
 
 namespace Repositorio.DAL.Contexto.Sial
 {
@@ -29,5 +33,14 @@ namespace Repositorio.DAL.Contexto.Sial
         {
             return Set<T>();
         }
+
+        public void Refresh()
+        {
+            foreach (var entity in  this.ChangeTracker.Entries())
+            {
+                entity.Reload();
+            }
+        }
+
     }
 }

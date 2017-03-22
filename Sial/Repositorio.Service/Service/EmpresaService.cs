@@ -33,6 +33,7 @@ namespace Repositorio.Service.Service
 
         public ICollection<Empresa> Buscar(string busca)
         {
+          
             return empresaRep.Where(emp => emp.Nome.Contains(busca) );
         }
     }

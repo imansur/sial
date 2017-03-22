@@ -28,6 +28,7 @@ namespace Repositorio.DAL.Repositorio.Base
         public System.Collections.Generic.ICollection<T> Where(Expression<Func<T, bool>> predicate)
         {
             var entidade = ctx.GetDbSet<T>();
+            ctx.Refresh();
             return entidade.Where(predicate).ToList();
         }
 

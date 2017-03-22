@@ -7,5 +7,6 @@ namespace Repositorio.DAL
     {
         int Salvar();
         IDbSet<T> GetDbSet<T>() where T : class;
+        void Refresh();
     }
 }
