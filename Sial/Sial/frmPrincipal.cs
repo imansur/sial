@@ -23,5 +23,11 @@ namespace Sial
             View.Cadastro.Empresa.frmGridEmpresa frmGridEmpresa = new View.Cadastro.Empresa.frmGridEmpresa();
             frmGridEmpresa.ShowDialog();
         }
+
+        private void orgãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View.Cadastro.Orgao.frmGridOrgao frmGridOrgao = new View.Cadastro.Orgao.frmGridOrgao();
+            frmGridOrgao.ShowDialog();
+        }
     }
 }

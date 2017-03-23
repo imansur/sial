@@ -124,11 +124,12 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.BtnSair);
             this.Controls.Add(this.btnSalvar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCadastroEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CadastroEmpresa";
+            this.Text = "Sial - Cadastro Empresa";
             this.ResumeLayout(false);
             this.PerformLayout();
 

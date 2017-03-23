@@ -33,9 +33,9 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.lblPesquisaEmpresas = new System.Windows.Forms.Label();
             this.dgvEmpresa = new System.Windows.Forms.DataGridView();
-            this.BtnNovo = new System.Windows.Forms.Button();
             this.IdEmpresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnNovo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,16 +95,6 @@
             this.dgvEmpresa.TabIndex = 4;
             this.dgvEmpresa.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpresa_CellDoubleClick);
             // 
-            // BtnNovo
-            // 
-            this.BtnNovo.Location = new System.Drawing.Point(16, 92);
-            this.BtnNovo.Name = "BtnNovo";
-            this.BtnNovo.Size = new System.Drawing.Size(96, 23);
-            this.BtnNovo.TabIndex = 5;
-            this.BtnNovo.Text = "Nova Empresa";
-            this.BtnNovo.UseVisualStyleBackColor = true;
-            this.BtnNovo.Click += new System.EventHandler(this.BtnNovo_Click);
-            // 
             // IdEmpresa
             // 
             this.IdEmpresa.DataPropertyName = "IdEmpresa";
@@ -121,6 +111,16 @@
             this.Nome.ReadOnly = true;
             this.Nome.Width = 580;
             // 
+            // BtnNovo
+            // 
+            this.BtnNovo.Location = new System.Drawing.Point(16, 92);
+            this.BtnNovo.Name = "BtnNovo";
+            this.BtnNovo.Size = new System.Drawing.Size(96, 23);
+            this.BtnNovo.TabIndex = 5;
+            this.BtnNovo.Text = "Nova Empresa";
+            this.BtnNovo.UseVisualStyleBackColor = true;
+            this.BtnNovo.Click += new System.EventHandler(this.BtnNovo_Click);
+            // 
             // frmGridEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,11 +132,12 @@
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.lblTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmGridEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "GridEmpresa";
+            this.Text = "Sial - Grid Empresa";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

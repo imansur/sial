@@ -92,6 +92,7 @@
             this.orgãoToolStripMenuItem.Name = "orgãoToolStripMenuItem";
             this.orgãoToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.orgãoToolStripMenuItem.Text = "Orgão";
+            this.orgãoToolStripMenuItem.Click += new System.EventHandler(this.orgãoToolStripMenuItem_Click);
             // 
             // responsávelToolStripMenuItem
             // 
@@ -150,7 +151,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPrincipal";
-            this.Text = "Principal";
+            this.Text = "Sial - Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuSial.ResumeLayout(false);
             this.menuSial.PerformLayout();

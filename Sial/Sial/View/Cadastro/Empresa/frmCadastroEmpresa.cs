@@ -94,7 +94,6 @@ namespace Sial.View.Cadastro.Empresa
             {
                 empresa.Nome = txtNome.Text;
                 empresa.Telefone = txtFone.Text;
-                //contexto.Entry(empresa).State = Modified;
                 SialSession.Salvar();
                 MessageBox.Show("Cadastro de Empresa salvo com sucesso!", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
