@@ -91,6 +91,18 @@
     <Compile Include="View\Cadastro\Orgao\frmGridOrgao.Designer.cs">
       <DependentUpon>frmGridOrgao.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Cadastro\Responsavel\frmCadastroResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\Responsavel\frmCadastroResponsavel.Designer.cs">
+      <DependentUpon>frmCadastroResponsavel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\Responsavel\frmGridResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\Responsavel\frmGridResponsavel.Designer.cs">
+      <DependentUpon>frmGridResponsavel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +126,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cadastro\Orgao\frmGridOrgao.resx">
       <DependentUpon>frmGridOrgao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\Responsavel\frmCadastroResponsavel.resx">
+      <DependentUpon>frmCadastroResponsavel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\Responsavel\frmGridResponsavel.resx">
+      <DependentUpon>frmGridResponsavel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -99,6 +99,7 @@
             this.responsávelToolStripMenuItem.Name = "responsávelToolStripMenuItem";
             this.responsávelToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.responsávelToolStripMenuItem.Text = "Responsável";
+            this.responsávelToolStripMenuItem.Click += new System.EventHandler(this.responsávelToolStripMenuItem_Click);
             // 
             // acompanhamentoToolStripMenuItem
             // 

@@ -29,5 +29,11 @@ namespace Sial
             View.Cadastro.Orgao.frmGridOrgao frmGridOrgao = new View.Cadastro.Orgao.frmGridOrgao();
             frmGridOrgao.ShowDialog();
         }
+
+        private void responsávelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View.Cadastro.Responsavel.frmGridResponsavel frmGridResponsavel = new View.Cadastro.Responsavel.frmGridResponsavel();
+            frmGridResponsavel.ShowDialog();
+        }
     }
 }
