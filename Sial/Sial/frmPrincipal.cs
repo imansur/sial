@@ -52,5 +52,11 @@ namespace Sial
             View.Cadastro.Lote.frmGridLote frmGridLote = new View.Cadastro.Lote.frmGridLote();
             frmGridLote.ShowDialog();
         }
+
+        private void acompanhamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View.Cadastro.Acompanhamento.frmGridAcompanhamento frmGridAcompanhamento = new View.Cadastro.Acompanhamento.frmGridAcompanhamento();
+            frmGridAcompanhamento.ShowDialog();
+        }
     }
 }
