@@ -41,5 +41,16 @@ namespace Sial
             View.Cadastro.Edital.frmGridEdital frmGridEdital = new View.Cadastro.Edital.frmGridEdital();
             frmGridEdital.ShowDialog();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void loteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View.Cadastro.Lote.frmGridLote frmGridLote = new View.Cadastro.Lote.frmGridLote();
+            frmGridLote.ShowDialog();
+        }
     }
 }

@@ -152,6 +152,8 @@ namespace Sial.View.Cadastro.Edital
             catch (Exception ex)
             {
                 Log.Error(ex.Message);
+                MessageBox.Show("Erro ao salvar Edital." + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
             }
         }
 

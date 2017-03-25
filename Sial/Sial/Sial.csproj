@@ -91,6 +91,18 @@
     <Compile Include="View\Cadastro\Empresa\frmGridEmpresa.Designer.cs">
       <DependentUpon>frmGridEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Cadastro\Lote\frmCadastroLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\Lote\frmCadastroLote.Designer.cs">
+      <DependentUpon>frmCadastroLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\Lote\frmGridLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\Lote\frmGridLote.Designer.cs">
+      <DependentUpon>frmGridLote.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Cadastro\Orgao\frmCadastroOrgao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cadastro\Empresa\frmGridEmpresa.resx">
       <DependentUpon>frmGridEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\Lote\frmCadastroLote.resx">
+      <DependentUpon>frmCadastroLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\Lote\frmGridLote.resx">
+      <DependentUpon>frmGridLote.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cadastro\Orgao\frmCadastroOrgao.resx">
       <DependentUpon>frmCadastroOrgao.cs</DependentUpon>

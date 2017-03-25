@@ -36,6 +36,7 @@
             this.orgãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.responsávelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acompanhamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.capaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.etiquetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,7 +64,8 @@
             this.empresaToolStripMenuItem,
             this.orgãoToolStripMenuItem,
             this.responsávelToolStripMenuItem,
-            this.acompanhamentoToolStripMenuItem});
+            this.acompanhamentoToolStripMenuItem,
+            this.sairToolStripMenuItem});
             this.licitaçãoToolStripMenuItem.Name = "licitaçãoToolStripMenuItem";
             this.licitaçãoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.licitaçãoToolStripMenuItem.Text = "Licitação";
@@ -80,6 +82,7 @@
             this.loteToolStripMenuItem.Name = "loteToolStripMenuItem";
             this.loteToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.loteToolStripMenuItem.Text = "Lote";
+            this.loteToolStripMenuItem.Click += new System.EventHandler(this.loteToolStripMenuItem_Click);
             // 
             // empresaToolStripMenuItem
             // 
@@ -107,6 +110,13 @@
             this.acompanhamentoToolStripMenuItem.Name = "acompanhamentoToolStripMenuItem";
             this.acompanhamentoToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.acompanhamentoToolStripMenuItem.Text = "Acompanhamento";
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // relatórioToolStripMenuItem
             // 
@@ -177,6 +187,7 @@
         private System.Windows.Forms.ToolStripMenuItem etiquetaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem licitaçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empresasParticipantesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
     }
 }
 
