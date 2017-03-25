@@ -71,8 +71,10 @@ namespace Sial.View.Cadastro.Edital
                 txtLocal.Text = edital.Local;
                 txtDataDescarte.Text = edital.DataDescarte.ToString();
 
+                dgvLote.AutoGenerateColumns = false;
                 dgvLote.DataSource = edital.Lote.ToList();
 
+                dgvAcompanhamento.AutoGenerateColumns = false;
                 dgvAcompanhamento.DataSource = edital.Acompanhamento.OrderBy(acomp => acomp.Data).ToList();
 
             }
