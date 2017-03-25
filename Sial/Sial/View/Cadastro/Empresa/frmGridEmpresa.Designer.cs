@@ -33,9 +33,9 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.lblPesquisaEmpresas = new System.Windows.Forms.Label();
             this.dgvEmpresa = new System.Windows.Forms.DataGridView();
+            this.BtnNovo = new System.Windows.Forms.Button();
             this.IdEmpresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnNovo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +87,7 @@
             this.dgvEmpresa.MultiSelect = false;
             this.dgvEmpresa.Name = "dgvEmpresa";
             this.dgvEmpresa.ReadOnly = true;
+            this.dgvEmpresa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmpresa.ShowCellErrors = false;
             this.dgvEmpresa.ShowCellToolTips = false;
             this.dgvEmpresa.ShowEditingIcon = false;
@@ -94,22 +95,6 @@
             this.dgvEmpresa.Size = new System.Drawing.Size(741, 289);
             this.dgvEmpresa.TabIndex = 4;
             this.dgvEmpresa.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpresa_CellDoubleClick);
-            // 
-            // IdEmpresa
-            // 
-            this.IdEmpresa.DataPropertyName = "IdEmpresa";
-            this.IdEmpresa.HeaderText = "Id. Empresa";
-            this.IdEmpresa.Name = "IdEmpresa";
-            this.IdEmpresa.ReadOnly = true;
-            this.IdEmpresa.Width = 70;
-            // 
-            // Nome
-            // 
-            this.Nome.DataPropertyName = "Nome";
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            this.Nome.Width = 580;
             // 
             // BtnNovo
             // 
@@ -120,6 +105,22 @@
             this.BtnNovo.Text = "Nova Empresa";
             this.BtnNovo.UseVisualStyleBackColor = true;
             this.BtnNovo.Click += new System.EventHandler(this.BtnNovo_Click);
+            // 
+            // IdEmpresa
+            // 
+            this.IdEmpresa.DataPropertyName = "IdEmpresa";
+            this.IdEmpresa.HeaderText = "Id. Empresa";
+            this.IdEmpresa.Name = "IdEmpresa";
+            this.IdEmpresa.ReadOnly = true;
+            this.IdEmpresa.Width = 90;
+            // 
+            // Nome
+            // 
+            this.Nome.DataPropertyName = "Nome";
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 580;
             // 
             // frmGridEmpresa
             // 

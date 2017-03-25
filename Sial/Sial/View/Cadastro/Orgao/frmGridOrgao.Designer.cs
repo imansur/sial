@@ -30,12 +30,12 @@
         {
             this.BtnNovo = new System.Windows.Forms.Button();
             this.dgvOrgao = new System.Windows.Forms.DataGridView();
+            this.IdOrgao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblPesquisaEmpresas = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.IdOrgao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrgao)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             this.dgvOrgao.MultiSelect = false;
             this.dgvOrgao.Name = "dgvOrgao";
             this.dgvOrgao.ReadOnly = true;
+            this.dgvOrgao.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvOrgao.ShowCellErrors = false;
             this.dgvOrgao.ShowCellToolTips = false;
             this.dgvOrgao.ShowEditingIcon = false;
@@ -68,6 +69,22 @@
             this.dgvOrgao.Size = new System.Drawing.Size(741, 289);
             this.dgvOrgao.TabIndex = 2;
             this.dgvOrgao.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrgao_CellDoubleClick);
+            // 
+            // IdOrgao
+            // 
+            this.IdOrgao.DataPropertyName = "IdOrgao";
+            this.IdOrgao.HeaderText = "Id. Orgão";
+            this.IdOrgao.Name = "IdOrgao";
+            this.IdOrgao.ReadOnly = true;
+            this.IdOrgao.Width = 80;
+            // 
+            // Nome
+            // 
+            this.Nome.DataPropertyName = "Nome";
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 580;
             // 
             // lblPesquisaEmpresas
             // 
@@ -104,22 +121,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(68, 24);
             this.lblTitulo.TabIndex = 6;
             this.lblTitulo.Text = "Orgão";
-            // 
-            // IdOrgao
-            // 
-            this.IdOrgao.DataPropertyName = "IdOrgao";
-            this.IdOrgao.HeaderText = "Id. Orgão";
-            this.IdOrgao.Name = "IdOrgao";
-            this.IdOrgao.ReadOnly = true;
-            this.IdOrgao.Width = 80;
-            // 
-            // Nome
-            // 
-            this.Nome.DataPropertyName = "Nome";
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            this.Nome.Width = 580;
             // 
             // frmGridOrgao
             // 

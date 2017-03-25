@@ -35,5 +35,11 @@ namespace Sial
             View.Cadastro.Responsavel.frmGridResponsavel frmGridResponsavel = new View.Cadastro.Responsavel.frmGridResponsavel();
             frmGridResponsavel.ShowDialog();
         }
+
+        private void editalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View.Cadastro.Edital.frmGridEdital frmGridEdital = new View.Cadastro.Edital.frmGridEdital();
+            frmGridEdital.ShowDialog();
+        }
     }
 }

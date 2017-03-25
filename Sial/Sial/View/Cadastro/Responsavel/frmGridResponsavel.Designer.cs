@@ -30,12 +30,12 @@
         {
             this.BtnNovo = new System.Windows.Forms.Button();
             this.dgvResp = new System.Windows.Forms.DataGridView();
+            this.IdResponsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblPesquisaEmpresas = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.IdResponsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             this.dgvResp.MultiSelect = false;
             this.dgvResp.Name = "dgvResp";
             this.dgvResp.ReadOnly = true;
+            this.dgvResp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvResp.ShowCellErrors = false;
             this.dgvResp.ShowCellToolTips = false;
             this.dgvResp.ShowEditingIcon = false;
@@ -68,6 +69,22 @@
             this.dgvResp.Size = new System.Drawing.Size(741, 289);
             this.dgvResp.TabIndex = 14;
             this.dgvResp.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResp_CellDoubleClick);
+            // 
+            // IdResponsavel
+            // 
+            this.IdResponsavel.DataPropertyName = "IdResponsavel";
+            this.IdResponsavel.HeaderText = "Id. Resp.";
+            this.IdResponsavel.Name = "IdResponsavel";
+            this.IdResponsavel.ReadOnly = true;
+            this.IdResponsavel.Width = 80;
+            // 
+            // Nome
+            // 
+            this.Nome.DataPropertyName = "Nome";
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 580;
             // 
             // lblPesquisaEmpresas
             // 
@@ -104,22 +121,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(130, 24);
             this.lblTitulo.TabIndex = 15;
             this.lblTitulo.Text = "Responsável";
-            // 
-            // IdResponsavel
-            // 
-            this.IdResponsavel.DataPropertyName = "IdResponsavel";
-            this.IdResponsavel.HeaderText = "Id. Resp.";
-            this.IdResponsavel.Name = "IdResponsavel";
-            this.IdResponsavel.ReadOnly = true;
-            this.IdResponsavel.Width = 80;
-            // 
-            // Nome
-            // 
-            this.Nome.DataPropertyName = "Nome";
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            this.Nome.Width = 580;
             // 
             // frmGridResponsavel
             // 

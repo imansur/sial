@@ -22,6 +22,7 @@ namespace Sial.View.Cadastro.Orgao
         {
             InitializeComponent();
             SialSession = new SialSession();
+            BindOrgao();
         }
 
         private void BindOrgao()

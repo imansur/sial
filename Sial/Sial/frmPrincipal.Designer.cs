@@ -73,6 +73,7 @@
             this.editalToolStripMenuItem.Name = "editalToolStripMenuItem";
             this.editalToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.editalToolStripMenuItem.Text = "Edital";
+            this.editalToolStripMenuItem.Click += new System.EventHandler(this.editalToolStripMenuItem_Click);
             // 
             // loteToolStripMenuItem
             // 
