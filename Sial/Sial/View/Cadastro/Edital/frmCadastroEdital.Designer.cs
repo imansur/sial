@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.BtnSair = new System.Windows.Forms.Button();
@@ -45,7 +45,7 @@
             this.cbContratante = new System.Windows.Forms.ComboBox();
             this.lblResponsavel = new System.Windows.Forms.Label();
             this.cbResponsavel = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtDataEntrega = new System.Windows.Forms.DateTimePicker();
             this.lblDataHoraEntrega = new System.Windows.Forms.Label();
             this.lblObjeto = new System.Windows.Forms.Label();
             this.txtObjeto = new System.Windows.Forms.TextBox();
@@ -70,7 +70,7 @@
             this.txtLocal = new System.Windows.Forms.TextBox();
             this.lblDestino = new System.Windows.Forms.Label();
             this.lblDataDescarte = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.txtDataDescarte = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAcompanhamento)).BeginInit();
             this.gbDestino.SuspendLayout();
@@ -101,7 +101,7 @@
             this.BtnSair.Location = new System.Drawing.Point(648, 628);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(75, 23);
-            this.BtnSair.TabIndex = 19;
+            this.BtnSair.TabIndex = 14;
             this.BtnSair.Text = "Sair";
             this.BtnSair.UseVisualStyleBackColor = true;
             this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
@@ -111,9 +111,10 @@
             this.btnSalvar.Location = new System.Drawing.Point(567, 628);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 17;
+            this.btnSalvar.TabIndex = 13;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblIdentificacao
             // 
@@ -130,14 +131,14 @@
             this.txtNumIdentificacao.Location = new System.Drawing.Point(12, 86);
             this.txtNumIdentificacao.Name = "txtNumIdentificacao";
             this.txtNumIdentificacao.Size = new System.Drawing.Size(111, 20);
-            this.txtNumIdentificacao.TabIndex = 21;
+            this.txtNumIdentificacao.TabIndex = 0;
             // 
             // txtNumEdital
             // 
             this.txtNumEdital.Location = new System.Drawing.Point(129, 86);
             this.txtNumEdital.Name = "txtNumEdital";
             this.txtNumEdital.Size = new System.Drawing.Size(186, 20);
-            this.txtNumEdital.TabIndex = 23;
+            this.txtNumEdital.TabIndex = 1;
             // 
             // lblNumEdital
             // 
@@ -153,7 +154,7 @@
             this.txtApelido.Location = new System.Drawing.Point(321, 86);
             this.txtApelido.Name = "txtApelido";
             this.txtApelido.Size = new System.Drawing.Size(403, 20);
-            this.txtApelido.TabIndex = 25;
+            this.txtApelido.TabIndex = 2;
             // 
             // lblApelido
             // 
@@ -181,7 +182,7 @@
             this.cbContratante.Location = new System.Drawing.Point(12, 126);
             this.cbContratante.Name = "cbContratante";
             this.cbContratante.Size = new System.Drawing.Size(712, 21);
-            this.cbContratante.TabIndex = 27;
+            this.cbContratante.TabIndex = 3;
             // 
             // lblResponsavel
             // 
@@ -200,16 +201,16 @@
             this.cbResponsavel.Location = new System.Drawing.Point(12, 165);
             this.cbResponsavel.Name = "cbResponsavel";
             this.cbResponsavel.Size = new System.Drawing.Size(506, 21);
-            this.cbResponsavel.TabIndex = 29;
+            this.cbResponsavel.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // txtDataEntrega
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy hh:mm";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(524, 165);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 30;
+            this.txtDataEntrega.CustomFormat = "dd/MM/yyyy hh:mm";
+            this.txtDataEntrega.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtDataEntrega.Location = new System.Drawing.Point(524, 165);
+            this.txtDataEntrega.Name = "txtDataEntrega";
+            this.txtDataEntrega.Size = new System.Drawing.Size(200, 20);
+            this.txtDataEntrega.TabIndex = 5;
             // 
             // lblDataHoraEntrega
             // 
@@ -235,7 +236,7 @@
             this.txtObjeto.Multiline = true;
             this.txtObjeto.Name = "txtObjeto";
             this.txtObjeto.Size = new System.Drawing.Size(712, 48);
-            this.txtObjeto.TabIndex = 33;
+            this.txtObjeto.TabIndex = 6;
             // 
             // txtObservacao
             // 
@@ -243,7 +244,7 @@
             this.txtObservacao.Multiline = true;
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.Size = new System.Drawing.Size(712, 48);
-            this.txtObservacao.TabIndex = 35;
+            this.txtObservacao.TabIndex = 7;
             // 
             // lblObservacao
             // 
@@ -256,14 +257,14 @@
             // 
             // dgvLote
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLote.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLote.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvLote.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLote.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numeroLote,
@@ -274,7 +275,7 @@
             this.dgvLote.Name = "dgvLote";
             this.dgvLote.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLote.Size = new System.Drawing.Size(711, 104);
-            this.dgvLote.TabIndex = 36;
+            this.dgvLote.TabIndex = 8;
             // 
             // numeroLote
             // 
@@ -299,10 +300,10 @@
             // orcamento
             // 
             this.orcamento.DataPropertyName = "Orcamento";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.orcamento.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "C2";
+            dataGridViewCellStyle11.NullValue = null;
+            this.orcamento.DefaultCellStyle = dataGridViewCellStyle11;
             this.orcamento.HeaderText = "Orçamento";
             this.orcamento.Name = "orcamento";
             this.orcamento.Width = 190;
@@ -336,7 +337,7 @@
             this.dgvAcompanhamento.Name = "dgvAcompanhamento";
             this.dgvAcompanhamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAcompanhamento.Size = new System.Drawing.Size(711, 104);
-            this.dgvAcompanhamento.TabIndex = 38;
+            this.dgvAcompanhamento.TabIndex = 9;
             // 
             // idAcompanhamento
             // 
@@ -347,9 +348,9 @@
             // data
             // 
             this.data.DataPropertyName = "Data";
-            dataGridViewCellStyle3.Format = "d";
-            dataGridViewCellStyle3.NullValue = null;
-            this.data.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Format = "d";
+            dataGridViewCellStyle12.NullValue = null;
+            this.data.DefaultCellStyle = dataGridViewCellStyle12;
             this.data.HeaderText = "Data";
             this.data.Name = "data";
             this.data.Width = 130;
@@ -370,7 +371,7 @@
             this.gbDestino.Location = new System.Drawing.Point(12, 573);
             this.gbDestino.Name = "gbDestino";
             this.gbDestino.Size = new System.Drawing.Size(356, 42);
-            this.gbDestino.TabIndex = 41;
+            this.gbDestino.TabIndex = 10;
             this.gbDestino.TabStop = false;
             this.gbDestino.Text = "Destino";
             // 
@@ -381,6 +382,7 @@
             this.rbEncerrado.Name = "rbEncerrado";
             this.rbEncerrado.Size = new System.Drawing.Size(74, 17);
             this.rbEncerrado.TabIndex = 3;
+            this.rbEncerrado.Tag = "3";
             this.rbEncerrado.Text = "Encerrado";
             this.rbEncerrado.UseVisualStyleBackColor = true;
             // 
@@ -391,6 +393,7 @@
             this.rbDescarte.Name = "rbDescarte";
             this.rbDescarte.Size = new System.Drawing.Size(68, 17);
             this.rbDescarte.TabIndex = 2;
+            this.rbDescarte.Tag = "2";
             this.rbDescarte.Text = "Descarte";
             this.rbDescarte.UseVisualStyleBackColor = true;
             // 
@@ -401,6 +404,7 @@
             this.rbArqMorto.Name = "rbArqMorto";
             this.rbArqMorto.Size = new System.Drawing.Size(91, 17);
             this.rbArqMorto.TabIndex = 1;
+            this.rbArqMorto.Tag = "1";
             this.rbArqMorto.Text = "Arquivo Morto";
             this.rbArqMorto.UseVisualStyleBackColor = true;
             // 
@@ -413,6 +417,7 @@
             this.rbAndamento.Size = new System.Drawing.Size(97, 17);
             this.rbAndamento.TabIndex = 0;
             this.rbAndamento.TabStop = true;
+            this.rbAndamento.Tag = "0";
             this.rbAndamento.Text = "Em Andamento";
             this.rbAndamento.UseVisualStyleBackColor = true;
             // 
@@ -421,7 +426,7 @@
             this.txtLocal.Location = new System.Drawing.Point(372, 591);
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(186, 20);
-            this.txtLocal.TabIndex = 43;
+            this.txtLocal.TabIndex = 11;
             // 
             // lblDestino
             // 
@@ -441,14 +446,16 @@
             this.lblDataDescarte.TabIndex = 45;
             this.lblDataDescarte.Text = "Data Descarte";
             // 
-            // dateTimePicker2
+            // txtDataDescarte
             // 
-            this.dateTimePicker2.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(567, 591);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(156, 20);
-            this.dateTimePicker2.TabIndex = 44;
+            this.txtDataDescarte.CustomFormat = " ";
+            this.txtDataDescarte.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtDataDescarte.Location = new System.Drawing.Point(567, 591);
+            this.txtDataDescarte.Name = "txtDataDescarte";
+            this.txtDataDescarte.Size = new System.Drawing.Size(156, 20);
+            this.txtDataDescarte.TabIndex = 12;
+            this.txtDataDescarte.ValueChanged += new System.EventHandler(this.txtDataDescarte_ValueChanged);
+            this.txtDataDescarte.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDataDescarte_KeyDown);
             // 
             // frmCadastroEdital
             // 
@@ -456,7 +463,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 661);
             this.Controls.Add(this.lblDataDescarte);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.txtDataDescarte);
             this.Controls.Add(this.txtLocal);
             this.Controls.Add(this.lblDestino);
             this.Controls.Add(this.gbDestino);
@@ -469,7 +476,7 @@
             this.Controls.Add(this.txtObjeto);
             this.Controls.Add(this.lblObjeto);
             this.Controls.Add(this.lblDataHoraEntrega);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtDataEntrega);
             this.Controls.Add(this.cbResponsavel);
             this.Controls.Add(this.lblResponsavel);
             this.Controls.Add(this.cbContratante);
@@ -515,7 +522,7 @@
         private System.Windows.Forms.ComboBox cbContratante;
         private System.Windows.Forms.Label lblResponsavel;
         private System.Windows.Forms.ComboBox cbResponsavel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker txtDataEntrega;
         private System.Windows.Forms.Label lblDataHoraEntrega;
         private System.Windows.Forms.Label lblObjeto;
         private System.Windows.Forms.TextBox txtObjeto;
@@ -540,6 +547,6 @@
         private System.Windows.Forms.TextBox txtLocal;
         private System.Windows.Forms.Label lblDestino;
         private System.Windows.Forms.Label lblDataDescarte;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker txtDataDescarte;
     }
 }

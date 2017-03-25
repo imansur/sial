@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvEdital = new System.Windows.Forms.DataGridView();
             this.lblPesquisaEmpresas = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
@@ -68,6 +68,7 @@
             this.dgvEdital.Size = new System.Drawing.Size(982, 289);
             this.dgvEdital.TabIndex = 10;
             this.dgvEdital.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEdital_CellDoubleClick);
+            this.dgvEdital.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvEdital_CellFormatting);
             // 
             // lblPesquisaEmpresas
             // 
@@ -152,8 +153,8 @@
             // Apelido
             // 
             this.Apelido.DataPropertyName = "Apelido";
-            dataGridViewCellStyle5.NullValue = null;
-            this.Apelido.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.NullValue = null;
+            this.Apelido.DefaultCellStyle = dataGridViewCellStyle1;
             this.Apelido.HeaderText = "Apelido";
             this.Apelido.Name = "Apelido";
             this.Apelido.ReadOnly = true;
@@ -162,9 +163,9 @@
             // DataEntrega
             // 
             this.DataEntrega.DataPropertyName = "DataHoraEntrega";
-            dataGridViewCellStyle6.Format = "d";
-            dataGridViewCellStyle6.NullValue = null;
-            this.DataEntrega.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Format = "d";
+            dataGridViewCellStyle2.NullValue = null;
+            this.DataEntrega.DefaultCellStyle = dataGridViewCellStyle2;
             this.DataEntrega.HeaderText = "Data Entrega";
             this.DataEntrega.Name = "DataEntrega";
             this.DataEntrega.ReadOnly = true;

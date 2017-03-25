@@ -43,5 +43,11 @@ namespace Sial.View.Cadastro.Edital
             frmCadastroEdital.ShowDialog();
             BindEdital();
         }
+
+        private void dgvEdital_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            Repositorio.Entidades.Entidades.Sial.Edital edital = dgvEdital.Rows[e.RowIndex].DataBoundItem as Repositorio.Entidades.Entidades.Sial.Edital;
+            dgvEdital.Rows[e.RowIndex].Cells["Contratante"].Value = edital.Orgao.Nome;
+        }
     }
 }
