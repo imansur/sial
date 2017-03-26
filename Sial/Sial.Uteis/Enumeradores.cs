@@ -13,5 +13,13 @@ namespace Sial.Uteis
             Insert,
             Update
         }
+
+        public enum Relatorio
+        {
+            Capa,
+            Etiqueta,
+            Participantes,
+            Licitacao
+        }
     }
 }

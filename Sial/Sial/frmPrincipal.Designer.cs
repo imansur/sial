@@ -38,10 +38,8 @@
             this.acompanhamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.capaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.etiquetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.padraoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.licitaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empresasParticipantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSial.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,37 +120,25 @@
             // relatórioToolStripMenuItem
             // 
             this.relatórioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.capaToolStripMenuItem,
-            this.etiquetaToolStripMenuItem,
-            this.licitaçõesToolStripMenuItem,
-            this.empresasParticipantesToolStripMenuItem});
+            this.padraoToolStripMenuItem,
+            this.licitaçõesToolStripMenuItem});
             this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
             this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.relatórioToolStripMenuItem.Text = "Relatório";
             // 
-            // capaToolStripMenuItem
+            // padraoToolStripMenuItem
             // 
-            this.capaToolStripMenuItem.Name = "capaToolStripMenuItem";
-            this.capaToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.capaToolStripMenuItem.Text = "Capa";
-            // 
-            // etiquetaToolStripMenuItem
-            // 
-            this.etiquetaToolStripMenuItem.Name = "etiquetaToolStripMenuItem";
-            this.etiquetaToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.etiquetaToolStripMenuItem.Text = "Etiqueta";
+            this.padraoToolStripMenuItem.Name = "padraoToolStripMenuItem";
+            this.padraoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.padraoToolStripMenuItem.Text = "Padrão";
+            this.padraoToolStripMenuItem.Click += new System.EventHandler(this.padraoToolStripMenuItem_Click);
             // 
             // licitaçõesToolStripMenuItem
             // 
             this.licitaçõesToolStripMenuItem.Name = "licitaçõesToolStripMenuItem";
-            this.licitaçõesToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.licitaçõesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.licitaçõesToolStripMenuItem.Text = "Licitações";
-            // 
-            // empresasParticipantesToolStripMenuItem
-            // 
-            this.empresasParticipantesToolStripMenuItem.Name = "empresasParticipantesToolStripMenuItem";
-            this.empresasParticipantesToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.empresasParticipantesToolStripMenuItem.Text = "Empresas Participantes";
+            this.licitaçõesToolStripMenuItem.Click += new System.EventHandler(this.licitaçõesToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -184,10 +170,8 @@
         private System.Windows.Forms.ToolStripMenuItem responsávelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acompanhamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatórioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem capaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem etiquetaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem padraoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem licitaçõesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem empresasParticipantesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
     }
 }

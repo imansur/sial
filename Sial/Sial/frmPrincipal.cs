@@ -58,5 +58,17 @@ namespace Sial
             View.Cadastro.Acompanhamento.frmGridAcompanhamento frmGridAcompanhamento = new View.Cadastro.Acompanhamento.frmGridAcompanhamento();
             frmGridAcompanhamento.ShowDialog();
         }
+
+        private void padraoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View.Relatorio.Padrao.frmGridRelatorio frmGridRelatorio = new View.Relatorio.Padrao.frmGridRelatorio();
+            frmGridRelatorio.ShowDialog();
+        }
+
+        private void licitaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View.Relatorio.Licitacao.frmLicitacao frmLicitacao = new View.Relatorio.Licitacao.frmLicitacao();
+            frmLicitacao.ShowDialog();
+        }
     }
 }
