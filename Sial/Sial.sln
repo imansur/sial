@@ -13,11 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositorio.Service", "Repo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sial.Uteis", "Sial.Uteis\Sial.Uteis.csproj", "{E6A082AE-5CD2-44FB-9E8A-0CAA4CC042B6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script Banco", "Script Banco", "{DE447ADE-D269-4FF1-9947-DFC3E0E8924A}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Ibraim.Mansur\Google Drive\Positivo\C#\Banco.sql = ..\..\..\Ibraim.Mansur\Google Drive\Positivo\C#\Banco.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
